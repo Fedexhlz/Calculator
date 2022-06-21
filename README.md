@@ -1,2 +1,2 @@
 # Calculator
-This is an easy Web Claculator App
+This is an easy Web Calculator App
