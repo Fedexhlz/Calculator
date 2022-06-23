@@ -8,6 +8,7 @@ class Display {
   }
 
   addNumber(number) {
+    if (number === '.' && this.currentValue.includes('.')) return;
     this.currentValue = this.currentValue + number;
     this.printValue();
   }
