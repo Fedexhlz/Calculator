@@ -4,3 +4,7 @@ const numberButton = document.querySelectorAll('.number');
 const operatorButton = document.querySelectorAll('operator');
 
 const display = new Display(displayPreviousValue, displayCurrentValue);
+
+numberButton.forEach((button) => {
+  button.addEventListener('click', () => display.addNumber(button.innerHTML));
+});

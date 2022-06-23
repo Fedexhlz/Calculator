@@ -8,6 +8,12 @@ class Display {
   }
 
   addNumber(number) {
-    this.currentValue = number;
+    this.currentValue = this.currentValue + number;
+    this.printValue();
+  }
+
+  printValue() {
+    this.displayCurrentValue.textContent = this.currentValue;
+    this.displayPreviousValue.textContent = this.previousValue;
   }
 }
